@@ -6,6 +6,7 @@ export default function App() {
   
   const [osoite, setOsoite] = useState('');
   const [tulos, setTulos] = useState([]);
+  const [teksti, setTeksti] = useState('');
   const [la, setLa] = useState('');
   const [ln, setLn] = useState('');
   const apikey ="PQA4d7L6YFhNGW4TeeTm8lzlAvVBqn5D";
@@ -29,11 +30,12 @@ export default function App() {
     };    
   }
   
-  /* useEffect(() => {
-    getLocation();
+   useEffect(() => {
+    getSijainti();
+  
     },
     []);
-*/
+
   // Mapview example
 
    const initial = {       //renderöidään vain käynnistyksessä, ei voi käyttää dynamic niin
