@@ -4,11 +4,11 @@ import MapView, { Marker } from 'react-native-maps';
 
 export default function App() {
   
-  const [osoite, setOsoite] = useState('');
+  const [osoite, setOsoite] = useState('Rautatieläisenkatu 6, Helsinki');
   const [tulos, setTulos] = useState([]);
   const [teksti, setTeksti] = useState('');
-  const [la, setLa] = useState('');
-  const [ln, setLn] = useState('');
+  const [la, setLa] = useState(10);
+  const [ln, setLn] = useState(10);
   const apikey ="PQA4d7L6YFhNGW4TeeTm8lzlAvVBqn5D";
  
   const getSijainti = async () => {
